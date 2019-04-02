@@ -31,8 +31,7 @@ public class GetRank {
         }
         int index = posKeywords.indexOf(keyWord);
         int rankTemp =  allRanks.get(index);
-        rank = (float)((1.7)*rankTemp)/allRanks.size();
-        rank = rank*10;
+        rank = (float)rankTemp;
         }catch(Exception e){
             System.out.println(e);
         }
@@ -55,8 +54,7 @@ public class GetRank {
         }
         int index = negKeywords.indexOf(keyWord);
         int rankTemp =  allRanks.get(index);
-        rank = (float) rankTemp/allRanks.size();
-        rank = rank*10;
+        rank = (float) rankTemp;
         }catch(Exception e){
             System.out.println(e);
         }
